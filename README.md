@@ -5,7 +5,5 @@ Automatic bracket generator
 
 Bracket image with <16 candidates
 
-Automatic choice between two candidates : showing both by name and/or image, with left-right panels, choosing with arrows
-which one wins, and show the following until a next round is up.
-
-Generate many brackets with a point system to track overall ranking.
+main to flush bad candidates. Estimate % of candidates to be flushed, and do N/Y inverse brackets of Y=2^ceil(log_2(1/%))
+elements where we select the losers and flush the worst loser. This will take N/Y*(Y-1) comparisons.
